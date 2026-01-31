@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sandipan Dafadar - ML Developer, Data Science Enthusiast, and Gamer. Portfolio showcasing projects, skills, and experience in machine learning and AI.">
+    <meta name="keywords" content="Machine Learning, Data Science, AI, Python, Portfolio, ML Developer">
+    <meta name="author" content="Sandipan Dafadar">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sandipan Dafadar - Portfolio">
+    <meta property="og:description" content="ML Developer | Data Science Enthusiast | Gamer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/portfolio">
+    <meta property="og:image" content="https://yourusername.github.io/portfolio/assets/preview.png">
+    
+    <title>Sandipan Dafadar - ML Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 7l3-3 3 3M6 4v16M18 17l-3 3-3-3M15 20V4"/>
+            </svg>
+            Sandipan's Portfolio
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="profile-image-container">
+            <img src="assets/profile.jpg" 
+                 alt="Sandipan Dafadar - ML Developer" 
+                 class="profile-image">
+        </div>
+        
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Sandipan Dafadar</span></h1>
+            <p class="subtitle">ML Developer | Data Science Enthusiast | Gamer</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/yourusername" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/yourusername" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="mailto:srijan@example.com" class="social-link" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <a href="assets/resume.pdf" class="cta-button" download>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download Resume
+            </a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+            </svg>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+            </svg>
+            About Me
+        </h2>
+        
+        <div class="about-content fade-in">
+            <p>
+                I'm a passionate Machine Learning Developer and Data Science enthusiast with a love for turning complex data into actionable insights. With expertise in building intelligent systems and developing cutting-edge ML models, I thrive on solving challenging problems.
+            </p>
+            <p>
+                When I'm not coding or training models, you'll find me gaming or exploring the latest tech trends. I believe in continuous learning and pushing the boundaries of what's possible with AI and machine learning.
+            </p>
+            <p>
+                My journey in tech has been driven by curiosity and a desire to make a real impact through innovative solutions that blend creativity with technical excellence.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            Skills & Expertise
+        </h2>
+        <p class="section-subtitle">
+            A comprehensive toolkit of technologies and frameworks I work with
+        </p>
+        
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Building and deploying sophisticated ML models with deep learning, neural networks, and model optimization techniques</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Keras</span>
+                </div>
+            </div>
+            
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                </div>
+                <h3>Data Science</h3>
+                <p>Statistical analysis, data visualization, and predictive modeling to extract meaningful insights from complex datasets</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Matplotlib</span>
+                </div>
+            </div>
+            
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <h3>Programming</h3>
+                <p>Expert in Python and proficient in multiple programming languages for diverse application development</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    </svg>
+                </div>
+                <h3>Tools & Platforms</h3>
+                <p>Experienced with modern development tools, cloud platforms, and collaborative workflows</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                </div>
+            </div>
+            
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <h3>NLP & Computer Vision</h3>
+                <p>Natural language processing and computer vision solutions for real-world applications</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">NLTK</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">spaCy</span>
+                </div>
+            </div>
+            
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 20v-6M6 20V10M18 20V4"/>
+                    </svg>
+                </div>
+                <h3>Data Visualization</h3>
+                <p>Creating compelling visual narratives from data using advanced visualization techniques</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Plotly</span>
+                    <span class="skill-tag">Seaborn</span>
+                    <span class="skill-tag">D3.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+            Experience
+        </h2>
+        <p class="section-subtitle">
+            My professional journey in technology and data science
+        </p>
+        
+        <div class="experience-timeline">
+            <div class="experience-item fade-in">
+                <div class="experience-dot"></div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Senior ML Engineer</h3>
+                        <div class="experience-company">Tech Innovations Inc.</div>
+                        <div class="experience-period">January 2023 - Present</div>
+                    </div>
+                    <p class="experience-description">
+                        Leading the development of advanced machine learning models for predictive analytics and automation. Spearheading initiatives in deep learning architecture design and deployment of production-ready ML systems serving millions of users.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="experience-item fade-in">
+                <div class="experience-dot"></div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-title">ML Developer</h3>
+                        <div class="experience-company">DataVision Labs</div>
+                        <div class="experience-period">June 2021 - December 2022</div>
+                    </div>
+                    <p class="experience-description">
+                        Developed and optimized machine learning pipelines for data processing and model training. Collaborated with cross-functional teams to integrate ML solutions into existing products, improving efficiency by 40%.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="experience-item fade-in">
+                <div class="experience-dot"></div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Data Science Intern</h3>
+                        <div class="experience-company">Analytics Corp</div>
+                        <div class="experience-period">January 2021 - May 2021</div>
+                    </div>
+                    <p class="experience-description">
+                        Performed exploratory data analysis and built predictive models for customer behavior analysis. Contributed to the development of automated data visualization dashboards used across the organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            Featured Projects
+        </h2>
+        <p class="section-subtitle">
+            Showcasing my best work in machine learning and data science
+        </p>
+        
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI Image Recognition System</h3>
+                    <p class="project-description">
+                        Developed a sophisticated deep learning model for real-time image classification with 95% accuracy. Implemented using CNN architecture and deployed on cloud infrastructure.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project1" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">NLP Chatbot Framework</h3>
+                    <p class="project-description">
+                        Built an intelligent conversational AI system using transformer models and natural language understanding. Handles multi-turn conversations with context awareness.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project2" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 20v-6M6 20V10M18 20V4"/>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Predictive Analytics Dashboard</h3>
+                    <p class="project-description">
+                        Created an interactive dashboard for real-time data visualization and predictive modeling. Features automated insights and trend analysis for business intelligence.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project3" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 15l-2 2-2-2"/>
+                <path d="M12 9V3"/>
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 15v6"/>
+            </svg>
+            Certifications
+        </h2>
+        <p class="section-subtitle">
+            Professional certifications and credentials
+        </p>
+        
+        <div class="certifications-grid">
+            <div class="certification-card fade-in">
+                <div class="cert-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                </div>
+                <h3 class="certification-title">TensorFlow Developer Certificate</h3>
+                <div class="certification-issuer">Google</div>
+                <div class="certification-date">Issued: June 2023</div>
+                <a href="#" class="cert-verify">
+                    Verify Credential
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="certification-card fade-in">
+                <div class="cert-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                </div>
+                <h3 class="certification-title">AWS Machine Learning Specialty</h3>
+                <div class="certification-issuer">Amazon Web Services</div>
+                <div class="certification-date">Issued: March 2023</div>
+                <a href="#" class="cert-verify">
+                    Verify Credential
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="certification-card fade-in">
+                <div class="cert-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </div>
+                <h3 class="certification-title">Deep Learning Specialization</h3>
+                <div class="certification-issuer">DeepLearning.AI</div>
+                <div class="certification-date">Issued: January 2023</div>
+                <a href="#" class="cert-verify">
+                    Verify Credential
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="certification-card fade-in">
+                <div class="cert-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                </div>
+                <h3 class="certification-title">Data Science Professional</h3>
+                <div class="certification-issuer">IBM</div>
+                <div class="certification-date">Issued: October 2022</div>
+                <a href="#" class="cert-verify">
+                    Verify Credential
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-section">
+            <div class="contact-content fade-in">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-description">
+                    I'm always excited to connect with fellow tech enthusiasts, potential collaborators, or anyone interested in machine learning and data science. Let's create something amazing together!
+                </p>
+                <div class="contact-buttons">
+                    <a href="mailto:srijan@example.com" class="contact-button primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        Send Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourusername" class="contact-button secondary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Srijan Das. All rights reserved.</p>
+            <p>Built with passion and curiosity</p>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
