@@ -215,7 +215,7 @@ window.addEventListener('load', () => {
 // === Console Easter Egg ===
 console.log('%c👋 Hello, Developer!', 'color: #14b8a6; font-size: 24px; font-weight: bold;');
 console.log('%cLooking for something? Check out the code on GitHub!', 'color: #cbd5e1; font-size: 14px;');
-console.log('%c🚀 Built with passion by Srijan Das', 'color: #22d3ee; font-size: 12px;');
+console.log('%c🚀 Built with passion by Sandipan Dafadar', 'color: #22d3ee; font-size: 12px;');
 
 // === Performance Optimization: Lazy Load Images ===
 if ('IntersectionObserver' in window) {
