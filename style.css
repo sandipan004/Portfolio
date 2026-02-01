@@ -76,6 +76,34 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
+/* Custom Cursor */
+body {
+    cursor: none;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease, border-color 0.3s ease;
+    mix-blend-mode: difference;
+}
+
+.cursor-follower {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.15s ease;
+}
+
 /* === Navigation === */
 nav {
     position: fixed;
